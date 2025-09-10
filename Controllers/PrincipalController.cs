@@ -26,5 +26,17 @@ namespace ApiServico.Controllers
                 telefone = "999"
             });
         }
+
+
+        [HttpGet("sobre")]
+        public IActionResult Sobre()
+        {
+            return Ok(new
+            {
+                nome = "Joao Teixeira",
+                email = "joao.teixeira@ifro.edu.br",
+                telefone = "999"
+            });
+        }
     }
 }
