@@ -72,7 +72,7 @@ namespace ApiServico.Controllers
             return Ok(chamado);
         }
 
-        [HttpPost("{id}/fechar")]
+        [HttpPost("{id}/fechamento")]
         public IActionResult FecharChamado(int id)
         {
             var chamado = _listaChamados.FirstOrDefault(item => item.Id == id);
