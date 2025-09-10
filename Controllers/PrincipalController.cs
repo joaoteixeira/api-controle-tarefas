@@ -33,9 +33,7 @@ namespace ApiServico.Controllers
         {
             return Ok(new
             {
-                nome = "Joao Teixeira",
-                email = "joao.teixeira@ifro.edu.br",
-                telefone = "999"
+                mensagem = "teste"
             });
         }
     }
