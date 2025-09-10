@@ -72,22 +72,6 @@ namespace ApiServico.Controllers
             return Ok(chamado);
         }
 
-        [HttpPost("{id}/fechamento")]
-        public IActionResult FecharChamado(int id)
-        {
-            var chamado = _listaChamados.FirstOrDefault(item => item.Id == id);
-
-            if (chamado == null)
-            {
-                return NotFound();
-            }
-
-            chamado.Status = "Fechado";
-            chamado.DataFechamento = DateTime.Now;
-
-            return Ok(chamado);
-        }
-
         [HttpDelete("{id}")]
         public IActionResult Remover(int id)
         {
