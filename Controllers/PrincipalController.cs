@@ -28,14 +28,13 @@ namespace ApiServico.Controllers
         }
 
 
-        [HttpGet("sobre")]
-        public IActionResult Sobre()
+        [HttpGet("status")]
+        public IActionResult Status()
         {
             return Ok(new
             {
-                nome = "Joao Teixeira",
-                email = "joao.teixeira@ifro.edu.br",
-                telefone = "999"
+               status = true,
+               version = "1.0"
             });
         }
     }
